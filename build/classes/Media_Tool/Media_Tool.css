@@ -1,0 +1,22 @@
+#nav_bar{
+    -fx-background-color: #cccccc ;
+}
+
+#folder_item_list{
+
+/*    -fx-background-color:#ffffff;
+    -fx-border-color: transparent #cccccc  transparent transparent;
+    -fx-border-insets: 5;
+    -fx-border-width: 10;
+    -fx-border-style: solid;*/
+    
+}
+#folder_item_list  VBox:hover{
+    -fx-background-color:#cccccc;
+}
+#home_nav_bar_item{
+    -fx-background-insets : 40;
+}
+#tools_container{
+    -fx-background-color:#ffffff;
+}
