@@ -5,6 +5,7 @@
  */
 package main;
 
+import Media_Tool.Media_Tool;
 import java.io.File;
 import java.util.stream.Collectors;
 import javafx.animation.KeyFrame;
@@ -33,6 +34,7 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.stage.WindowEvent;
 import javafx.util.Duration;
 
 /**
@@ -151,10 +153,11 @@ public class Home {
         //menu_label label
         menu_label.setText("Home");
 
-        //imageview
+        //imageview image_player_icon
         sidemenu_imageview.setImage(new Image(sidemenu_icon, 30, 30, true, true));
-        //button
+//        sidemenu_imageview.setImage(new Image(image_player_icon, 30, 30, true, true));
 
+        //button
         sidemenu_button.setGraphic(sidemenu_imageview);
 
         //add contents to menu
@@ -263,8 +266,10 @@ public class Home {
                         && event.getDragboard().hasFiles()) {
 
                     event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+
+                    event.consume();
                 }
-                event.consume();
+
             }
         });
 
@@ -280,8 +285,15 @@ public class Home {
                             file -> {
                                 System.out.println(file.getAbsolutePath());
 
+                                if (file.isDirectory()) {
+
+                                    Media_Tool tl = new Media_Tool();
+                                    tl.start(file.getAbsolutePath());
+
+                                }
                             });
                     success = true;
+                    event.consume();
                 }
                 event.setDropCompleted(success);
                 event.consume();
@@ -294,11 +306,20 @@ public class Home {
         primarystage.setTitle("Araizen Media Tool");
         //primarystage.initModality(Modality.APPLICATION_MODAL);
 
-        primarystage.setAlwaysOnTop(true);
+        //primarystage.setAlwaysOnTop(true);
 //        primarystage.getIcons().add(new Image(image_player_icon));
+        primarystage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent event) {
+
+                System.out.println("----------<<<<<<< on close event home >>>>>>>>>>>>---------");
+
+                System.exit(0);
+
+            }
+
+        });
         primarystage.showAndWait();
     }
-    
-    
 
 }

@@ -90,15 +90,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         
-       // Home hm= new Home();
-        //hm.start();
+        Home hm= new Home();
+        hm.start();
         
-//        Media_Tool tl = new Media_Tool();
-//        tl.start("C:\\Users\\kamau\\Videos\\4K Video Downloader");
-        
+       
 
-Media_View_Start mvs = new Media_View_Start();
-mvs.start("C:\\Users\\kamau\\Pictures\\79d1e041244ce4358218e8a2bb568014.jpg");//208381,xcitefun-3d-cool-wallpapers-1.jpg");
+//Media_View_Start mvs = new Media_View_Start();
+//mvs.start("C:\\Users\\kamau\\Pictures\\79d1e041244ce4358218e8a2bb568014.jpg");//208381,xcitefun-3d-cool-wallpapers-1.jpg");
 
 
 //        if (type.equals("single")) {

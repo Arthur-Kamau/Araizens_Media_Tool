@@ -130,7 +130,6 @@ public class Media_Player_Start {
     Button video_button;
     ImageView self_picture_view;
 
-    VideoCapture capture;
 
     /**
      * stage for dialog
@@ -139,6 +138,8 @@ public class Media_Player_Start {
     Stage command_stage;
     Stage error_stage;
 
+    
+    VideoCapture capture;
     // a timer for acquiring the video stream
     private ScheduledExecutorService timer;
     // a flag to change the button behavior

@@ -1,15 +1,22 @@
 #nav_bar{
     -fx-background-color: #cccccc ;
 }
+#root_hbox{
+    -fx-background-color:green ;
+}
+ #root_vbox{
+     -fx-background-color: yellow;
+ }
+ #tools_container{
+    -fx-background-color:blue;
 
+}
+#media_player_view_container{
+    -fx-background-color:green;
+}
 #folder_item_list{
 
-/*    -fx-background-color:#ffffff;
-    -fx-border-color: transparent #cccccc  transparent transparent;
-    -fx-border-insets: 5;
-    -fx-border-width: 10;
-    -fx-border-style: solid;*/
-    
+  
 }
 #folder_item_list  VBox:hover{
     -fx-background-color:#cccccc;
@@ -17,6 +24,18 @@
 #home_nav_bar_item{
     -fx-background-insets : 40;
 }
-#tools_container{
-    -fx-background-color:#ffffff;
+#media_player_controls_slider_container{
+     -fx-background-color:red;
+}
+#media_player_controls_container{
+    -fx-background-color:yellow;
+}
+#media_player_commands_show{
+ -fx-background-color:purple;   
+}
+#media_player_commands_show_button{
+   -fx-background-insets : 60; 
+}
+#dropdown_container{
+    
 }
