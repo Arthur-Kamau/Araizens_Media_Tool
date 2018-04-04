@@ -1,0 +1,134 @@
+button{
+    -fx-background-color:#ffffff;
+    -fx-padding:8;
+}
+#nav_button{
+  -fx-background-color: transparent;     
+}
+#all_songs_tab{
+    -fx-background-color: transparent;     
+}
+#all_songs_tab:hover{
+       -fx-border-width  : 0 0 2 0;
+    -fx-border-color:#9cfd9c;
+}
+#all_songs_tab:selected{
+   
+     -fx-background-color: transparent; 
+    -fx-background-color: #373e48;
+  -fx-background-radius: 0;
+  -fx-text-fill: #cccccc;
+ 
+}
+#playlist_tab{
+    
+    -fx-background-color: transparent;
+}
+#playlist_tab:hover{
+ 
+    -fx-border-width  : 0 0 2 0;
+    -fx-border-color:#9cfd9c;
+}
+#playlist_tab:selected{
+    -fx-background-color: transparent; 
+    -fx-background-color: #373e48;
+  -fx-background-radius: 0;
+  -fx-text-fill: #cccccc;
+}
+#current_play_tab{
+   
+     -fx-background-color: transparent;
+}
+#current_play_tab:hover{
+    -fx-border-width  : 0 0 2 0;
+    -fx-border-color:#9cfd9c;
+}
+#current_play_tab:selected{
+    -fx-background-color: transparent; 
+    -fx-background-color: #373e48;
+  -fx-background-radius: 0;
+  -fx-text-fill: #cccccc;
+}
+#play_button{
+    -fx-background-color: transparent; 
+}
+#play_button:hover{
+    -fx-border-width  : 0 0 2 0;
+    -fx-border-color:#9cfd9c;
+}
+#jump_back_button{
+    -fx-background-color: transparent; 
+}   
+#jump_back_button:hover{
+  -fx-border-width  : 0 0 2 0;
+    -fx-border-color:#9cfd9c;   
+}
+#jump_forwad_button{
+    -fx-background-color: transparent; 
+}
+#jump_forwad_button:hover{
+     -fx-border-width  : 0 0 2 0;
+    -fx-border-color:#9cfd9c;
+}
+#content_container{
+     -fx-background-color:#ffffff;
+}
+#stackpane{
+     -fx-background-color:#ffffff;
+}
+#contaiiner_vbox{
+    -fx-background-color:#ffffff;
+}
+
+.slider {
+    -jfx-default-thumb: #0F9D58;
+    -jfx-default-track: #CCCCCC;
+}
+
+.slider .track,
+.slider:vertical .track {
+    -fx-background-color: -jfx-default-track;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-pref-width: 2px;
+    -fx-pref-height: 2px;
+}
+
+.slider .thumb,
+.slider:focused .thumb {
+    -fx-background-color: -jfx-default-thumb;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0;
+}
+
+.slider .colored-track {
+    -fx-background-color: -jfx-default-thumb;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+}
+
+.slider .slider-value {
+    -fx-stroke: WHITE;
+    -fx-font-size: 10;
+}
+
+.slider .animated-thumb {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-background-color: -jfx-default-thumb;
+    -fx-background-radius: 50% 50% 50% 0%;
+    -fx-background-insets: 0;
+}
+
+.slider:min .thumb,
+.slider:min:focused .thumb {
+    -fx-background-color: -jfx-default-track;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0;
+}
+
+.slider:min .animated-thumb {
+    -fx-background-color: -jfx-default-track;
+    -fx-background-radius: 50% 50% 50% 0%;
+    -fx-background-insets: 0;
+}
